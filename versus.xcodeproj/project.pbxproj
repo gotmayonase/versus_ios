@@ -22,6 +22,15 @@
 		27699B0518594F96009AFBB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27699AE418594F96009AFBB1 /* UIKit.framework */; };
 		27699B0D18594F96009AFBB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27699B0B18594F96009AFBB1 /* InfoPlist.strings */; };
 		27699B0F18594F96009AFBB1 /* versusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27699B0E18594F96009AFBB1 /* versusTests.m */; };
+		27AEE3D2185967B9000C831C /* CredentialStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AEE3D1185967B9000C831C /* CredentialStore.m */; };
+		27AEE3D5185968F4000C831C /* AuthAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AEE3D4185968F4000C831C /* AuthAPIClient.m */; };
+		27AEE3D818596E2F000C831C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AEE3D718596E2F000C831C /* LoginViewController.m */; };
+		27AEE3DB18598346000C831C /* SuggestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AEE3DA18598346000C831C /* SuggestionViewController.m */; };
+		27AEE3DE18598354000C831C /* MembersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AEE3DD18598354000C831C /* MembersListViewController.m */; };
+		27AEE3E61859946E000C831C /* ping_pong.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AEE3E51859946E000C831C /* ping_pong.png */; };
+		27AEE3E81859949D000C831C /* members.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AEE3E71859949D000C831C /* members.png */; };
+		27AEE3EB18599568000C831C /* MemberDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AEE3EA18599568000C831C /* MemberDetailViewController.m */; };
+		FC8736850C24474BA0F6D4FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2290B7DE4F5A4CE099D21045 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BD4A7959F6C4BB5A99285ED /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		2290B7DE4F5A4CE099D21045 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		27699ADD18594F96009AFBB1 /* versus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = versus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27699AE018594F96009AFBB1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27699AE218594F96009AFBB1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -56,6 +67,20 @@
 		27699B0A18594F96009AFBB1 /* versusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "versusTests-Info.plist"; sourceTree = "<group>"; };
 		27699B0C18594F96009AFBB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27699B0E18594F96009AFBB1 /* versusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = versusTests.m; sourceTree = "<group>"; };
+		27AEE3D0185967B9000C831C /* CredentialStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CredentialStore.h; sourceTree = "<group>"; };
+		27AEE3D1185967B9000C831C /* CredentialStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CredentialStore.m; sourceTree = "<group>"; };
+		27AEE3D3185968F4000C831C /* AuthAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthAPIClient.h; sourceTree = "<group>"; };
+		27AEE3D4185968F4000C831C /* AuthAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthAPIClient.m; sourceTree = "<group>"; };
+		27AEE3D618596E2F000C831C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		27AEE3D718596E2F000C831C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		27AEE3D918598346000C831C /* SuggestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuggestionViewController.h; sourceTree = "<group>"; };
+		27AEE3DA18598346000C831C /* SuggestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuggestionViewController.m; sourceTree = "<group>"; };
+		27AEE3DC18598354000C831C /* MembersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersListViewController.h; sourceTree = "<group>"; };
+		27AEE3DD18598354000C831C /* MembersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersListViewController.m; sourceTree = "<group>"; };
+		27AEE3E51859946E000C831C /* ping_pong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_pong.png; sourceTree = "<group>"; };
+		27AEE3E71859949D000C831C /* members.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = members.png; sourceTree = "<group>"; };
+		27AEE3E918599568000C831C /* MemberDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberDetailViewController.h; sourceTree = "<group>"; };
+		27AEE3EA18599568000C831C /* MemberDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +91,7 @@
 				27699AE318594F96009AFBB1 /* CoreGraphics.framework in Frameworks */,
 				27699AE518594F96009AFBB1 /* UIKit.framework in Frameworks */,
 				27699AE118594F96009AFBB1 /* Foundation.framework in Frameworks */,
+				FC8736850C24474BA0F6D4FF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +115,7 @@
 				27699B0818594F96009AFBB1 /* versusTests */,
 				27699ADF18594F96009AFBB1 /* Frameworks */,
 				27699ADE18594F96009AFBB1 /* Products */,
+				0BD4A7959F6C4BB5A99285ED /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +135,7 @@
 				27699AE218594F96009AFBB1 /* CoreGraphics.framework */,
 				27699AE418594F96009AFBB1 /* UIKit.framework */,
 				27699B0218594F96009AFBB1 /* XCTest.framework */,
+				2290B7DE4F5A4CE099D21045 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -115,6 +143,7 @@
 		27699AE618594F96009AFBB1 /* versus */ = {
 			isa = PBXGroup;
 			children = (
+				27AEE3DF18599347000C831C /* Resources */,
 				27699AEF18594F96009AFBB1 /* AppDelegate.h */,
 				27699AF018594F96009AFBB1 /* AppDelegate.m */,
 				27699AF218594F96009AFBB1 /* Main.storyboard */,
@@ -124,6 +153,18 @@
 				27699AF918594F96009AFBB1 /* DetailViewController.m */,
 				27699AFB18594F96009AFBB1 /* Images.xcassets */,
 				27699AE718594F96009AFBB1 /* Supporting Files */,
+				27AEE3D0185967B9000C831C /* CredentialStore.h */,
+				27AEE3D1185967B9000C831C /* CredentialStore.m */,
+				27AEE3D3185968F4000C831C /* AuthAPIClient.h */,
+				27AEE3D4185968F4000C831C /* AuthAPIClient.m */,
+				27AEE3D618596E2F000C831C /* LoginViewController.h */,
+				27AEE3D718596E2F000C831C /* LoginViewController.m */,
+				27AEE3D918598346000C831C /* SuggestionViewController.h */,
+				27AEE3DA18598346000C831C /* SuggestionViewController.m */,
+				27AEE3DC18598354000C831C /* MembersListViewController.h */,
+				27AEE3DD18598354000C831C /* MembersListViewController.m */,
+				27AEE3E918599568000C831C /* MemberDetailViewController.h */,
+				27AEE3EA18599568000C831C /* MemberDetailViewController.m */,
 			);
 			path = versus;
 			sourceTree = "<group>";
@@ -157,6 +198,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		27AEE3DF18599347000C831C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				27AEE3E018599359000C831C /* Images */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		27AEE3E018599359000C831C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				27AEE3E71859949D000C831C /* members.png */,
+				27AEE3E51859946E000C831C /* ping_pong.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 27699B1218594F96009AFBB1 /* Build configuration list for PBXNativeTarget "versus" */;
 			buildPhases = (
+				CDAC9E5B5F7447DF93601EE6 /* Check Pods Manifest.lock */,
 				27699AD918594F96009AFBB1 /* Sources */,
 				27699ADA18594F96009AFBB1 /* Frameworks */,
 				27699ADB18594F96009AFBB1 /* Resources */,
+				13ED9B75BB5541AB891FE42A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,7 +294,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27AEE3E81859949D000C831C /* members.png in Resources */,
 				27699AFC18594F96009AFBB1 /* Images.xcassets in Resources */,
+				27AEE3E61859946E000C831C /* ping_pong.png in Resources */,
 				27699AEB18594F96009AFBB1 /* InfoPlist.strings in Resources */,
 				27699AF418594F96009AFBB1 /* Main.storyboard in Resources */,
 			);
@@ -249,15 +312,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13ED9B75BB5541AB891FE42A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDAC9E5B5F7447DF93601EE6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		27699AD918594F96009AFBB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				27699AF118594F96009AFBB1 /* AppDelegate.m in Sources */,
+				27AEE3DE18598354000C831C /* MembersListViewController.m in Sources */,
+				27AEE3D2185967B9000C831C /* CredentialStore.m in Sources */,
 				27699AF718594F96009AFBB1 /* MasterViewController.m in Sources */,
 				27699AED18594F96009AFBB1 /* main.m in Sources */,
+				27AEE3DB18598346000C831C /* SuggestionViewController.m in Sources */,
+				27AEE3D818596E2F000C831C /* LoginViewController.m in Sources */,
 				27699AFA18594F96009AFBB1 /* DetailViewController.m in Sources */,
+				27AEE3D5185968F4000C831C /* AuthAPIClient.m in Sources */,
+				27AEE3EB18599568000C831C /* MemberDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +483,7 @@
 		};
 		27699B1318594F96009AFBB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BD4A7959F6C4BB5A99285ED /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -394,6 +497,7 @@
 		};
 		27699B1418594F96009AFBB1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BD4A7959F6C4BB5A99285ED /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -466,6 +570,7 @@
 				27699B1418594F96009AFBB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27699B1518594F96009AFBB1 /* Build configuration list for PBXNativeTarget "versusTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +579,7 @@
 				27699B1718594F96009AFBB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
