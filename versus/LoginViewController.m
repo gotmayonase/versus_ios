@@ -29,7 +29,6 @@
 {
   [super viewDidLoad];
   self.credStore = [CredentialStore new];
-  [self.credStore clearSavedCredentials];
   
   if ([self.credStore isLoggedIn]) {
     [self dismissAndProceed];
@@ -53,10 +52,13 @@
 - (IBAction)login:(id)sender {
   [SVProgressHUD show];
   
-  NSDictionary *params = @{
-    @"email": self.emailField.text,
-    @"password": self.passwordField.text
-  };
+  NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
+  NSString *deviceToken = [defs objectForKey:@"deviceToken"];
+  NSMutableDictionary *params = [NSMutableDictionary dictionaryWithObjectsAndKeys:self.emailField.text, @"email", self.passwordField.text, @"password", nil];
+
+  if (deviceToken) {
+    [params setObject:deviceToken forKey:@"device_token"];
+  }
   
   [[AuthAPIClient sharedClient] POST:@"/api/v1/users/sign_in.json" parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
     NSString *authToken = [responseObject objectForKey:@"auth_token"];

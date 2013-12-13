@@ -29,6 +29,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-UrbanAirship-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4750860B76F249D4BCBC0156</key>
+		<key>0115FAFC979240E785B93FD9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4F77EF6B99BD4D0AAB5CCD14</key>
+		<key>144CC12AA72447C6AE5022B5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8E7B426B231D41B39522BEAA</key>
+		<key>8FB4784B303F498393047F2F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B0672AD181304766AF2AB163</key>
+		<key>96EEEF1DFB0B43CCBAA5C15D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D34A2DB51F424F0A8EA4D188</key>
+		<key>BDFE8C640D1F4F1E8F257C25</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DB04399566AA4E7A8E2DAC64</key>
+		<key>CBE47A55A0AD4C88B5427AEA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D1C71665C46244BD9CD922AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

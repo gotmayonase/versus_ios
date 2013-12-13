@@ -30,6 +30,8 @@
 		27AEE3E61859946E000C831C /* ping_pong.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AEE3E51859946E000C831C /* ping_pong.png */; };
 		27AEE3E81859949D000C831C /* members.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AEE3E71859949D000C831C /* members.png */; };
 		27AEE3EB18599568000C831C /* MemberDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AEE3EA18599568000C831C /* MemberDetailViewController.m */; };
+		27AEE3F0185ABA97000C831C /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27AEE3EF185ABA97000C831C /* AirshipConfig.plist */; };
+		27AEE3F2185ADE0E000C831C /* ping_pong_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AEE3F1185ADE0E000C831C /* ping_pong_lg.png */; };
 		FC8736850C24474BA0F6D4FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2290B7DE4F5A4CE099D21045 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,8 @@
 		27AEE3E71859949D000C831C /* members.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = members.png; sourceTree = "<group>"; };
 		27AEE3E918599568000C831C /* MemberDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberDetailViewController.h; sourceTree = "<group>"; };
 		27AEE3EA18599568000C831C /* MemberDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberDetailViewController.m; sourceTree = "<group>"; };
+		27AEE3EF185ABA97000C831C /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
+		27AEE3F1185ADE0E000C831C /* ping_pong_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_pong_lg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,28 +147,28 @@
 		27699AE618594F96009AFBB1 /* versus */ = {
 			isa = PBXGroup;
 			children = (
-				27AEE3DF18599347000C831C /* Resources */,
 				27699AEF18594F96009AFBB1 /* AppDelegate.h */,
 				27699AF018594F96009AFBB1 /* AppDelegate.m */,
-				27699AF218594F96009AFBB1 /* Main.storyboard */,
-				27699AF518594F96009AFBB1 /* MasterViewController.h */,
-				27699AF618594F96009AFBB1 /* MasterViewController.m */,
+				27AEE3D3185968F4000C831C /* AuthAPIClient.h */,
+				27AEE3D4185968F4000C831C /* AuthAPIClient.m */,
+				27AEE3D0185967B9000C831C /* CredentialStore.h */,
+				27AEE3D1185967B9000C831C /* CredentialStore.m */,
 				27699AF818594F96009AFBB1 /* DetailViewController.h */,
 				27699AF918594F96009AFBB1 /* DetailViewController.m */,
 				27699AFB18594F96009AFBB1 /* Images.xcassets */,
-				27699AE718594F96009AFBB1 /* Supporting Files */,
-				27AEE3D0185967B9000C831C /* CredentialStore.h */,
-				27AEE3D1185967B9000C831C /* CredentialStore.m */,
-				27AEE3D3185968F4000C831C /* AuthAPIClient.h */,
-				27AEE3D4185968F4000C831C /* AuthAPIClient.m */,
 				27AEE3D618596E2F000C831C /* LoginViewController.h */,
 				27AEE3D718596E2F000C831C /* LoginViewController.m */,
-				27AEE3D918598346000C831C /* SuggestionViewController.h */,
-				27AEE3DA18598346000C831C /* SuggestionViewController.m */,
-				27AEE3DC18598354000C831C /* MembersListViewController.h */,
-				27AEE3DD18598354000C831C /* MembersListViewController.m */,
+				27699AF218594F96009AFBB1 /* Main.storyboard */,
+				27699AF518594F96009AFBB1 /* MasterViewController.h */,
+				27699AF618594F96009AFBB1 /* MasterViewController.m */,
 				27AEE3E918599568000C831C /* MemberDetailViewController.h */,
 				27AEE3EA18599568000C831C /* MemberDetailViewController.m */,
+				27AEE3DC18598354000C831C /* MembersListViewController.h */,
+				27AEE3DD18598354000C831C /* MembersListViewController.m */,
+				27AEE3DF18599347000C831C /* Resources */,
+				27AEE3D918598346000C831C /* SuggestionViewController.h */,
+				27AEE3DA18598346000C831C /* SuggestionViewController.m */,
+				27699AE718594F96009AFBB1 /* Supporting Files */,
 			);
 			path = versus;
 			sourceTree = "<group>";
@@ -176,6 +180,7 @@
 				27699AE918594F96009AFBB1 /* InfoPlist.strings */,
 				27699AEC18594F96009AFBB1 /* main.m */,
 				27699AEE18594F96009AFBB1 /* versus-Prefix.pch */,
+				27AEE3EF185ABA97000C831C /* AirshipConfig.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -210,6 +215,7 @@
 		27AEE3E018599359000C831C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				27AEE3F1185ADE0E000C831C /* ping_pong_lg.png */,
 				27AEE3E71859949D000C831C /* members.png */,
 				27AEE3E51859946E000C831C /* ping_pong.png */,
 			);
@@ -265,6 +271,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Mike Mayo";
 				TargetAttributes = {
+					27699ADC18594F96009AFBB1 = {
+						DevelopmentTeam = Q67YZ6BUYV;
+					};
 					27699B0018594F96009AFBB1 = {
 						TestTargetID = 27699ADC18594F96009AFBB1;
 					};
@@ -296,7 +305,9 @@
 			files = (
 				27AEE3E81859949D000C831C /* members.png in Resources */,
 				27699AFC18594F96009AFBB1 /* Images.xcassets in Resources */,
+				27AEE3F2185ADE0E000C831C /* ping_pong_lg.png in Resources */,
 				27AEE3E61859946E000C831C /* ping_pong.png in Resources */,
+				27AEE3F0185ABA97000C831C /* AirshipConfig.plist in Resources */,
 				27699AEB18594F96009AFBB1 /* InfoPlist.strings in Resources */,
 				27699AF418594F96009AFBB1 /* Main.storyboard in Resources */,
 			);
@@ -444,6 +455,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -465,7 +477,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Mayo (Q67YZ6BUYV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mike Mayo (Q67YZ6BUYV)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -476,6 +489,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -487,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mike Mayo (P4TVGZM225)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "versus/versus-Prefix.pch";
 				INFOPLIST_FILE = "versus/versus-Info.plist";
@@ -501,6 +516,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Mayo (Q67YZ6BUYV)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "versus/versus-Prefix.pch";
 				INFOPLIST_FILE = "versus/versus-Info.plist";
@@ -551,6 +567,75 @@
 			};
 			name = Release;
 		};
+		27AEE3EC185AADDD000C831C /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Mayo (Q67YZ6BUYV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mike Mayo (Q67YZ6BUYV)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		27AEE3ED185AADDD000C831C /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BD4A7959F6C4BB5A99285ED /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mike Mayo (Q67YZ6BUYV)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "versus/versus-Prefix.pch";
+				INFOPLIST_FILE = "versus/versus-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc;
+		};
+		27AEE3EE185AADDD000C831C /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/versus.app/versus";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "versus/versus-Prefix.pch";
+				INFOPLIST_FILE = "versusTests/versusTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = AdHoc;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -559,6 +644,7 @@
 			buildConfigurations = (
 				27699B1018594F96009AFBB1 /* Debug */,
 				27699B1118594F96009AFBB1 /* Release */,
+				27AEE3EC185AADDD000C831C /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -568,6 +654,7 @@
 			buildConfigurations = (
 				27699B1318594F96009AFBB1 /* Debug */,
 				27699B1418594F96009AFBB1 /* Release */,
+				27AEE3ED185AADDD000C831C /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -577,6 +664,7 @@
 			buildConfigurations = (
 				27699B1618594F96009AFBB1 /* Debug */,
 				27699B1718594F96009AFBB1 /* Release */,
+				27AEE3EE185AADDD000C831C /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

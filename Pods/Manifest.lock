@@ -24,6 +24,7 @@ PODS:
   - SSKeychain (1.2.1)
   - SVProgressHUD (1.0)
   - TPKeyboardAvoiding (1.2.1)
+  - UrbanAirship-iOS-SDK (3.0.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
@@ -31,6 +32,7 @@ DEPENDENCIES:
   - SSKeychain
   - SVProgressHUD
   - TPKeyboardAvoiding
+  - UrbanAirship-iOS-SDK
 
 SPEC CHECKSUMS:
   AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
@@ -38,5 +40,6 @@ SPEC CHECKSUMS:
   SSKeychain: d18926838c2e7cd342e2a49e9f869858e49f035a
   SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
   TPKeyboardAvoiding: 0536c563e6c8b8e95a7c4bf87fca9c0991f5e826
+  UrbanAirship-iOS-SDK: 3e653cc690a2e5f9a35a2b531ebe570bc2d15c0e
 
 COCOAPODS: 0.28.0

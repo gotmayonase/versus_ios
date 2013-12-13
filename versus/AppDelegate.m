@@ -13,7 +13,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    return YES;
+  // Populate AirshipConfig.plist with your app's info from https://go.urbanairship.com
+  // or set runtime properties here.
+  UAConfig *config = [UAConfig defaultConfig];
+  
+  // You can also programmatically override the plist values:
+  // config.developmentAppKey = @"YourKey";
+  // etc.
+  
+  // Call takeOff (which creates the UAirship singleton)
+  [UAirship takeOff:config];
+  
+  [[UAPush shared] setRegistrationDelegate:self];
+  
+  [UAPush shared].notificationTypes = (UIRemoteNotificationTypeBadge |
+                                       UIRemoteNotificationTypeSound |
+                                       UIRemoteNotificationTypeAlert);
+  return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -41,6 +57,27 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - UAPush Registration Delegate
+
+- (void)registerDeviceTokenFailed:(UAHTTPRequest *)request {
+  
+}
+
+- (void)registerDeviceTokenSucceeded {
+  NSString *deviceToken = [UAPush shared].deviceToken;
+  NSUserDefaults *defs = [NSUserDefaults standardUserDefaults];
+  [defs setObject:deviceToken forKey:@"deviceToken"];
+  [defs synchronize];
+  CredentialStore *store = [[CredentialStore alloc] init];
+  if ([store isLoggedIn]) {
+    [[AuthAPIClient sharedClient] POST:@"/api/v1/users/register_device_token.json" parameters:@{ @"device_token": deviceToken } success:^(AFHTTPRequestOperation *operation, id responseObject) {
+      NSLog(@"device token registered with API!");
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+      NSLog(@"Failed to register device token with API: %@", error);
+    }];
+  }
 }
 
 @end

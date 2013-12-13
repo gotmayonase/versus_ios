@@ -8,6 +8,7 @@
 
 #import "MemberDetailViewController.h"
 #import <UIImageView+KHGravatar.h>
+#import "AuthAPIClient.h"
 
 @interface MemberDetailViewController ()
 
@@ -40,7 +41,11 @@
 }
 
 - (IBAction)play:(id)sender {
-  [[[UIAlertView alloc] initWithTitle:@"No" message:@"You are not prepared!" delegate:nil cancelButtonTitle:@"Run away crying" otherButtonTitles: nil] show];
+  [[AuthAPIClient sharedClient] POST:[NSString stringWithFormat:@"/api/v1/members/%@/play.json",[self.member objectForKey:@"id"]] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    NSLog(@"Player alerted!");
+  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    NSLog(@"Failure alerting player: %@", error);
+  }];
 }
 
 @end

@@ -9,12 +9,16 @@
 #import "SuggestionViewController.h"
 #import "AuthAPIClient.h"
 #import <UIImageView+KHGravatar.h>
+#import <QuartzCore/QuartzCore.h>
+#import <SVProgressHUD.h>
 
 @interface SuggestionViewController ()
 
 @end
 
-@implementation SuggestionViewController
+@implementation SuggestionViewController {
+  NSDictionary *member;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,18 +31,31 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+  [super viewDidLoad];
+  CALayer *imageLayer = self.imageView.layer;
+  [imageLayer setCornerRadius:75];
+  [imageLayer setBorderWidth:1];
+  [imageLayer setBorderColor:[UIColor whiteColor].CGColor];
+  [imageLayer setMasksToBounds:YES];
 	// Do any additional setup after loading the view.
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
+  [SVProgressHUD showWithStatus:@"Finding a worthy opponent"];
+  [[AuthAPIClient sharedClient] GET:@"/api/v1/members/suggest.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    member = responseObject;
+    self.nameLabel.text = [member valueForKey:@"email"];
+    [self.imageView setImageWithGravatarEmailAddress:[member valueForKey:@"email"]];
+    [SVProgressHUD dismiss];
+  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    [SVProgressHUD dismiss];
+    NSLog(@"Failure loading suggestion: %@", error);
+  }];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
-  [[AuthAPIClient sharedClient] GET:@"/api/v1/members/suggest.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-    self.nameLabel.text = [responseObject valueForKey:@"email"];
-    [self.imageView setImageWithGravatarEmailAddress:[responseObject valueForKey:@"email"]];
-  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-    NSLog(@"Failure loading suggestion: %@", error);
-  }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,6 +65,10 @@
 }
 
 - (IBAction)play:(id)sender {
-  [[[UIAlertView alloc] initWithTitle:@"No" message:@"You are not prepared!" delegate:nil cancelButtonTitle:@"Run away crying" otherButtonTitles: nil] show];
+  [[AuthAPIClient sharedClient] POST:[NSString stringWithFormat:@"/api/v1/members/%@/play.json",[member objectForKey:@"id"]] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    NSLog(@"Player alerted!");
+  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    NSLog(@"Failure alerting player: %@", error);
+  }];
 }
 @end

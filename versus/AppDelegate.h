@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <UrbanAirship-iOS-SDK/UAirship.h>
+#import <UrbanAirship-iOS-SDK/UAConfig.h>
+#import <UrbanAirship-iOS-SDK/UAPush.h>
+#import "AuthAPIClient.h"
+#import "CredentialStore.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UARegistrationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
