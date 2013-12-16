@@ -32,6 +32,7 @@
 		27AEE3EB18599568000C831C /* MemberDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AEE3EA18599568000C831C /* MemberDetailViewController.m */; };
 		27AEE3F0185ABA97000C831C /* AirshipConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27AEE3EF185ABA97000C831C /* AirshipConfig.plist */; };
 		27AEE3F2185ADE0E000C831C /* ping_pong_lg.png in Resources */ = {isa = PBXBuildFile; fileRef = 27AEE3F1185ADE0E000C831C /* ping_pong_lg.png */; };
+		27AEE3F5185BDFC1000C831C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AEE3F4185BDFC1000C831C /* ProfileViewController.m */; };
 		FC8736850C24474BA0F6D4FF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2290B7DE4F5A4CE099D21045 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,8 @@
 		27AEE3EA18599568000C831C /* MemberDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberDetailViewController.m; sourceTree = "<group>"; };
 		27AEE3EF185ABA97000C831C /* AirshipConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AirshipConfig.plist; sourceTree = "<group>"; };
 		27AEE3F1185ADE0E000C831C /* ping_pong_lg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ping_pong_lg.png; sourceTree = "<group>"; };
+		27AEE3F3185BDFC1000C831C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		27AEE3F4185BDFC1000C831C /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				27AEE3D918598346000C831C /* SuggestionViewController.h */,
 				27AEE3DA18598346000C831C /* SuggestionViewController.m */,
 				27699AE718594F96009AFBB1 /* Supporting Files */,
+				27AEE3F3185BDFC1000C831C /* ProfileViewController.h */,
+				27AEE3F4185BDFC1000C831C /* ProfileViewController.m */,
 			);
 			path = versus;
 			sourceTree = "<group>";
@@ -369,6 +374,7 @@
 				27AEE3DB18598346000C831C /* SuggestionViewController.m in Sources */,
 				27AEE3D818596E2F000C831C /* LoginViewController.m in Sources */,
 				27699AFA18594F96009AFBB1 /* DetailViewController.m in Sources */,
+				27AEE3F5185BDFC1000C831C /* ProfileViewController.m in Sources */,
 				27AEE3D5185968F4000C831C /* AuthAPIClient.m in Sources */,
 				27AEE3EB18599568000C831C /* MemberDetailViewController.m in Sources */,
 			);

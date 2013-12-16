@@ -78,6 +78,12 @@
 #define COCOAPODS_VERSION_MINOR_TPKeyboardAvoiding 2
 #define COCOAPODS_VERSION_PATCH_TPKeyboardAvoiding 1
 
+// TestFlightSDK
+#define COCOAPODS_POD_AVAILABLE_TestFlightSDK
+#define COCOAPODS_VERSION_MAJOR_TestFlightSDK 2
+#define COCOAPODS_VERSION_MINOR_TestFlightSDK 1
+#define COCOAPODS_VERSION_PATCH_TestFlightSDK 3
+
 // UrbanAirship-iOS-SDK
 #define COCOAPODS_POD_AVAILABLE_UrbanAirship_iOS_SDK
 #define COCOAPODS_VERSION_MAJOR_UrbanAirship_iOS_SDK 3

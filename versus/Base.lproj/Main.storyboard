@@ -24,7 +24,7 @@
         <!--Login View Controller-->
         <scene sceneID="q4p-n5-uuE">
             <objects>
-                <viewController id="HTP-n3-Y6h" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginView" id="HTP-n3-Y6h" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="u05-qG-fSl"/>
                         <viewControllerLayoutGuide type="bottom" id="19f-Vh-Ikf"/>
@@ -138,6 +138,7 @@
                     <connections>
                         <segue destination="Nbw-Wp-vro" kind="relationship" relationship="viewControllers" id="LCl-n5-3M0"/>
                         <segue destination="kBZ-Yq-FRk" kind="relationship" relationship="viewControllers" id="bUZ-zM-hia"/>
+                        <segue destination="lip-73-XmR" kind="relationship" relationship="viewControllers" id="9XN-VU-tXm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EPb-yI-hnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -203,6 +204,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tGL-KV-ixf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1925" y="392"/>
+        </scene>
+        <!--Profile View Controller - Profile-->
+        <scene sceneID="QMG-ds-Uyl">
+            <objects>
+                <viewController id="lip-73-XmR" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n63-hp-zkD"/>
+                        <viewControllerLayoutGuide type="bottom" id="CJn-y7-jdn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3wd-8r-P0o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wS-ug-wvX">
+                                <rect key="frame" x="128" y="266" width="65" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logout:" destination="lip-73-XmR" eventType="touchUpInside" id="9h7-CS-D89"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="kbk-w7-Ipn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkg-4l-PGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1492" y="1107"/>
         </scene>
         <!--Navigation Controller - Members-->
         <scene sceneID="7TP-NS-f8U">

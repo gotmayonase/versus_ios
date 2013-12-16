@@ -66,9 +66,9 @@
 
 - (IBAction)play:(id)sender {
   [[AuthAPIClient sharedClient] POST:[NSString stringWithFormat:@"/api/v1/members/%@/play.json",[member objectForKey:@"id"]] parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-    NSLog(@"Player alerted!");
+    [[[UIAlertView alloc] initWithTitle:@"Player notification success" message:[NSString stringWithFormat:@"%@ has been notified that you are ready to play.", [member valueForKey:@"email"]] delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles: nil] show];
   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-    NSLog(@"Failure alerting player: %@", error);
+    [[[UIAlertView alloc] initWithTitle:@"Player notification error" message:[NSString stringWithFormat:@"%@ could not be notified at this time.", [member valueForKey:@"email"]] delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles: nil] show];
   }];
 }
 @end

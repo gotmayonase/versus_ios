@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <TestFlight.h>
 
 @implementation AppDelegate
 
@@ -15,6 +16,7 @@
     // Override point for customization after application launch.
   // Populate AirshipConfig.plist with your app's info from https://go.urbanairship.com
   // or set runtime properties here.
+  [TestFlight takeOff:@"9cbbfdcd2667006c96e18835081d7a57_MzEyOTY4MjAxMy0xMi0xMiAyMTo0Nzo0Ni44MTE1OTc"];
   UAConfig *config = [UAConfig defaultConfig];
   
   // You can also programmatically override the plist values:
@@ -25,6 +27,7 @@
   [UAirship takeOff:config];
   
   [[UAPush shared] setRegistrationDelegate:self];
+  [[UAPush shared] resetBadge];
   
   [UAPush shared].notificationTypes = (UIRemoteNotificationTypeBadge |
                                        UIRemoteNotificationTypeSound |

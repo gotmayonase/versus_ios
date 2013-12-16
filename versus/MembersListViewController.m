@@ -30,7 +30,6 @@
 {
   [super viewDidLoad];
   members = @[];
-
 }
 
 - (void)viewDidAppear:(BOOL)animated {

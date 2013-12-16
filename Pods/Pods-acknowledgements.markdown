@@ -108,6 +108,15 @@ Michael Tyson, A Tasty Pixel
 michael@atastypixel.com
 
 
+## TestFlightSDK
+
+All text and design is copyright © 2010-2013 TestFlight App, Inc.
+
+All rights reserved.
+
+https://testflightapp.com/tos/
+
+
 ## UrbanAirship-iOS-SDK
 
 /*
