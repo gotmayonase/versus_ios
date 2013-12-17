@@ -16,7 +16,7 @@
     // Override point for customization after application launch.
   // Populate AirshipConfig.plist with your app's info from https://go.urbanairship.com
   // or set runtime properties here.
-  [TestFlight takeOff:@"9cbbfdcd2667006c96e18835081d7a57_MzEyOTY4MjAxMy0xMi0xMiAyMTo0Nzo0Ni44MTE1OTc"];
+  [TestFlight takeOff:@"5a6e0b3c-149a-4bca-9726-ed03e7e9617e"];
   UAConfig *config = [UAConfig defaultConfig];
   
   // You can also programmatically override the plist values:

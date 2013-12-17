@@ -10,8 +10,8 @@
 
 #import "CredentialStore.h"
 
-//#define BASE_URL @"http://192.168.1.77:3000/"
-#define BASE_URL @"http://pongboard.herokuapp.com/"
+#define BASE_URL @"http://192.168.1.77:3000/"
+//#define BASE_URL @"http://pongboard.herokuapp.com/"
 
 @implementation AuthAPIClient
 

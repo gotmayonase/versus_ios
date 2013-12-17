@@ -9,7 +9,8 @@
 #import "MemberDetailViewController.h"
 #import <UIImageView+KHGravatar.h>
 #import "AuthAPIClient.h"
-
+#import <UrbanAirship-iOS-SDK/UAConfig.h>
+#import <TestFlight.h>
 @interface MemberDetailViewController ()
 
 @end
@@ -46,6 +47,22 @@
   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
     [[[UIAlertView alloc] initWithTitle:@"Player notification error" message:[NSString stringWithFormat:@"%@ could not be notified at this time.", [self.member valueForKey:@"email"]] delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles: nil] show];
   }];
+}
+
+- (IBAction)postWin:(id)sender {
+  [[AuthAPIClient sharedClient] POST:@"/api/v1/games.json" parameters:@{ @"game": @{ @"loser_id": [self.member valueForKey:@"id"]} }success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [[[UIAlertView alloc] initWithTitle:@"Win posted" message:[NSString stringWithFormat:@"Your defeat of %@ has been registered. Let the public shaming begin!", [self.member valueForKey:@"email"]] delegate:nil cancelButtonTitle:@"Aww yiss!" otherButtonTitles: nil] show];
+  } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+    if (operation.response.statusCode == 403) {
+//      Just posted a win
+      [[[UIAlertView alloc] initWithTitle:@"WTF?" message:[NSString stringWithFormat:@"You just posted a win against %@. Chill!", [self.member valueForKey:@"email"]] delegate:nil cancelButtonTitle:@"Alright, sorry" otherButtonTitles: nil] show];
+    } else {
+      [[[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"We had trouble posting your win against %@.", [self.member valueForKey:@"email"]] delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles: nil] show];
+      TFLog(@"Error posting a win: %@", error);
+    }
+    
+  }];
+
 }
 
 @end

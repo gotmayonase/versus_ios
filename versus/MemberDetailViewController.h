@@ -15,5 +15,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 
 - (IBAction)play:(id)sender;
+- (IBAction)postWin:(id)sender;
 
 @end

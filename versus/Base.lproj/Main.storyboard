@@ -283,8 +283,18 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="play:" destination="kBZ-Yq-FRk" eventType="touchUpInside" id="4e4-VG-GGn"/>
                                     <action selector="play:" destination="OXc-dH-E71" eventType="touchUpInside" id="ONm-Tz-R4m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfw-YV-C5c">
+                                <rect key="frame" x="102" y="457" width="117" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="POST A WIN">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="postWin:" destination="OXc-dH-E71" eventType="touchUpInside" id="BuS-F2-AK6"/>
                                 </connections>
                             </button>
                         </subviews>
