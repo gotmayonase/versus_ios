@@ -29,7 +29,11 @@
 - (void)viewDidLoad
 {
   [super viewDidLoad];
-  NSLog(@"member: %@", self.member);
+  CALayer *imageLayer = self.imageView.layer;
+  [imageLayer setCornerRadius:75];
+  [imageLayer setBorderWidth:1];
+  [imageLayer setBorderColor:[UIColor whiteColor].CGColor];
+  [imageLayer setMasksToBounds:YES];
   self.nameLabel.text = [self.member valueForKey:@"email"];
   [self.imageView setImageWithGravatarEmailAddress:[self.member valueForKey:@"email"]];
 	// Do any additional setup after loading the view.
