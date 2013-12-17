@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import <TestFlight.h>
+#import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 
 @implementation AppDelegate
 
@@ -32,6 +33,10 @@
   [UAPush shared].notificationTypes = (UIRemoteNotificationTypeBadge |
                                        UIRemoteNotificationTypeSound |
                                        UIRemoteNotificationTypeAlert);
+  
+
+  [[AFNetworkActivityIndicatorManager sharedManager] setEnabled:YES];
+  
   return YES;
 }
 							

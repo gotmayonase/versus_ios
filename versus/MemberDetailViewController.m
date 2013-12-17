@@ -59,7 +59,7 @@
   } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
     if (operation.response.statusCode == 403) {
 //      Just posted a win
-      [[[UIAlertView alloc] initWithTitle:@"WTF?" message:[NSString stringWithFormat:@"You just posted a win against %@. Chill!", [self.member valueForKey:@"email"]] delegate:nil cancelButtonTitle:@"Alright, sorry" otherButtonTitles: nil] show];
+      [[[UIAlertView alloc] initWithTitle:@"WTF?" message:[operation.responseObject valueForKey:@"errors"] delegate:nil cancelButtonTitle:@"Alright, sorry" otherButtonTitles: nil] show];
     } else {
       [[[UIAlertView alloc] initWithTitle:@"Error" message:[NSString stringWithFormat:@"We had trouble posting your win against %@.", [self.member valueForKey:@"email"]] delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles: nil] show];
       TFLog(@"Error posting a win: %@", error);
